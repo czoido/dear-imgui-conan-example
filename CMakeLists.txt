@@ -6,12 +6,12 @@ conan_basic_setup()
 
 add_executable( dear-imgui-conan 
                 main.cpp 
-                imgui_impl_glfw.cpp
-                imgui_impl_opengl3.cpp
+                bindings/imgui_impl_glfw.cpp
+                bindings/imgui_impl_opengl3.cpp
                 opengl_shader.cpp
 				file_manager.cpp
-                imgui_impl_glfw.h
-                imgui_impl_opengl3.h 
+                bindings/imgui_impl_glfw.h
+                bindings/imgui_impl_opengl3.h 
                 opengl_shader.h 
 				file_manager.h 
 				assets/simple-shader.vs

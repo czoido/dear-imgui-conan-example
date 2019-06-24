@@ -5,3 +5,9 @@ glew/2.1.0@bincrafters/stable
 
 [generators]
 cmake_multi
+
+[imports]
+./misc/bindings, imgui_impl_glfw.cpp -> ../bindings
+./misc/bindings, imgui_impl_opengl3.cpp -> ../bindings
+./misc/bindings, imgui_impl_glfw.h -> ../bindings
+./misc/bindings, imgui_impl_opengl3.h -> ../bindings
