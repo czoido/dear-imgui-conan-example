@@ -23,4 +23,6 @@ add_custom_command(TARGET dear-imgui-conan
     COMMAND ${CMAKE_COMMAND} -E copy ${PROJECT_SOURCE_DIR}/assets/simple-shader.fs ${PROJECT_BINARY_DIR}
 )
 
+target_compile_definitions(dear-imgui-conan PUBLIC IMGUI_IMPL_OPENGL_LOADER_GLEW)
+
 conan_target_link_libraries(dear-imgui-conan)
