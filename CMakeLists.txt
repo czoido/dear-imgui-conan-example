@@ -1,19 +1,23 @@
-cmake_minimum_required(VERSION 2.8.12)
-project(dear-imgui-conan)
+cmake_minimum_required(VERSION 3.0)
+project(dear-imgui-conan CXX)
 
-include(${CMAKE_BINARY_DIR}/conanbuildinfo_multi.cmake)
+include(${CMAKE_BINARY_DIR}/conanbuildinfo.cmake)
 conan_basic_setup()
 
 add_executable( dear-imgui-conan 
                 main.cpp 
-                bindings/imgui_impl_glfw.cpp
-                bindings/imgui_impl_opengl3.cpp
-                opengl_shader.cpp
+                
+				bindings/imgui_impl_glfw.cpp
+				bindings/imgui_impl_opengl3.cpp
+				opengl_shader.cpp
 				file_manager.cpp
-                bindings/imgui_impl_glfw.h
-                bindings/imgui_impl_opengl3.h 
-                opengl_shader.h 
+						
+				bindings/imgui_impl_glfw.h
+				bindings/imgui_impl_opengl3.h 
+				bindings/imgui_impl_opengl3_loader.h
+				opengl_shader.h 
 				file_manager.h 
+				
 				assets/simple-shader.vs
 				assets/simple-shader.fs )
 
